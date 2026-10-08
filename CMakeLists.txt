@@ -26,6 +26,7 @@ add_executable(Grabins
     main.cpp
     Window.cpp
     font.cpp
+    CameraControls.cpp
 )
 if(APPLE)
     set_target_properties(Grabins PROPERTIES MACOSX_BUNDLE TRUE)
