@@ -1,4 +1,4 @@
-//forgot to add this lol
+//forgot to add this main file lol
 #include "Window.h"
 
 int main()
