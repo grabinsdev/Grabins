@@ -25,6 +25,7 @@ FetchContent_MakeAvailable(raylib)
 add_executable(Grabins
     main.cpp
     Window.cpp
+    font.cpp
 )
 
 target_link_libraries(Grabins PRIVATE raylib)
