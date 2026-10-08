@@ -27,6 +27,9 @@ add_executable(Grabins
     Window.cpp
     font.cpp
 )
+if(APPLE)
+    set_target_properties(Grabins PROPERTIES MACOSX_BUNDLE TRUE)
+endif()
 
 target_link_libraries(Grabins PRIVATE raylib)
 

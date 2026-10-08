@@ -12,7 +12,7 @@ int main()
     {
         BeginDrawing();
         ClearBackground(BLACK);
-        DrawTextEx(f, "Camic Snas MS", {190, 200}, 20, 2, LIGHTGRAY);
+        DrawTextEx(f, "Grabins!", {300, 100}, 20, 2, LIGHTGRAY);
         EndDrawing();
     }
 
