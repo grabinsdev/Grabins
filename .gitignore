@@ -27,6 +27,8 @@
 *.mod
 *.smod
 
+#uh
+.DS_Store
 # Compiled Static libraries
 *.lai
 *.la
@@ -40,6 +42,7 @@
 
 # Build directories
 build/
+Build-windows/
 Build/
 build-*/
 

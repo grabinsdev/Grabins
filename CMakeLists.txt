@@ -2,6 +2,12 @@ cmake_minimum_required(VERSION 3.20)
 
 project(Grabins LANGUAGES C CXX)
 
+# A toolchain file can set this when cross-compiling, so dependencies build
+# for the target platform rather than the host platform.
+if(CMAKE_CROSSCOMPILING AND CMAKE_SYSTEM_NAME STREQUAL "Windows")
+    set(PLATFORM Desktop CACHE STRING "" FORCE)
+endif()
+
 include(FetchContent)
 
 set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
